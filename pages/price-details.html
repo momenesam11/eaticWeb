@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب الباقة | eatic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="container">
+  <div class="row mt-5 pt-5 justify-content-between align-items-start">
+
+    <div class="col-lg-4 col-md-5 order-1 order-md-2 mb-4">
+      <div class="shadow-sm price-card px-4 py-4 rounded-2 text-center border">
+
+        <div class="d-flex justify-content-between mt-3">
+          <h6 class="fw-bold text-primary fs-5" id="summaryTitle"></h6>
+          <div class="d-flex gap-1 align-items-center">
+            <h6 class="fw-bold text-primary mb-0 fs-5" id="summaryPrice"></h6>
+            <img src="../assets/lucide_saudi-riyal.svg" width="20">
+          </div>
+        </div>
+
+        <p class="fs-5 text-primary text-end mt-2" id="summaryDesc"></p>
+
+        <ul class="list-unstyled my-4 text-start pe-1 d-flex flex-column gap-2" id="featuresList"></ul>
+
+        
+
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-7 order-2 order-md-1">
+
+      <div class="request">
+        <div class="header-request d-flex flex-column gap-2 mb-4">
+          <h3 class="text-secondary" id="planTitle"></h3>
+          <h5 class="text-primary" id="planDescription"></h5>
+        </div>
+
+        <!-- الاسم + الهاتف -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input class="form-control py-2" placeholder="الاسم">
+          </div>
+          <div class="col-md-6">
+            <input class="form-control py-2" placeholder="رقم الهاتف">
+          </div>
+        </div>
+
+        <!-- اسم المطعم + عدد الفروع -->
+        <div class="row g-3 mt-3">
+          <div class="col-md-6">
+            <input class="form-control py-2" placeholder="اسم المطعم">
+          </div>
+          <div class="col-md-6">
+            <div class="custom-number-input w-100 position-relative">
+  <input
+    id="branches"
+    type="number"
+    class="form-control py-2"
+    placeholder="عدد الفروع"
+    min="0"
+  />
+
+  <div class="arrows position-absolute top-50 start-0 translate-middle-y ms-3 d-flex gap-3">
+    <a type="button" onclick="increaseBranches()">
+      <img src="../assets/arrow-up.svg" alt="up">
+    </a>
+    <a type="button" onclick="decreaseBranches()">
+      <img src="../assets/arrow-down.svg" alt="down">
+    </a>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+          <div class="col-md-6">
+            <select class="form-select py-2">
+              <option hidden>اختر الدولة</option>
+              <option>مصر</option>
+              <option>السعودية</option>
+              <option>الامارات</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input class="form-control py-2" placeholder="المدينة">
+          </div>
+        </div>
+
+        <button class="btn btn-primary mt-4 px-5">
+          اطلب الباقة
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-md-6 col-12 d-flex flex-column justify-content-center py-5">
+      <h4 class="text-secondary">تابعنا الآن</h4>
+      <h5 class="text-primary">
+        يمكنك التواصل معنا عبر البريد الإلكتروني أو متابعتنا على السوشيال ميديا
+      </h5>
+
+      <div class="socail d-flex gap-3 mt-3">
+        <img src="../assets/icon-1.svg" class="shadow-sm">
+        <img src="../assets/icon-2.svg" class="shadow-sm">
+        <img src="../assets/icon-3.svg" class="shadow-sm">
+        <img src="../assets/icon.svg" class="shadow-sm">
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 d-flex flex-column justify-content-center py-5">
+
+      <div class="w-100 d-flex align-items-center shadow-sm py-3 px-3 border rounded-2 gap-4 mb-3">
+        <img src="../assets/mdi_email.svg" class="me-3">
+        <div class="d-flex flex-column gap-3">
+          <h6 class="fw-bold mb-0 fs-6">البريد الإلكتروني</h6>
+          <p class="mb-0">eatic.i@info.com</p>
+        </div>
+      </div>
+
+      <div class="w-100 d-flex align-items-center shadow-sm py-3 px-3 border rounded-2 gap-4 mb-3">
+        <img src="../assets/ic_baseline-phone.svg" class="me-3">
+        <div class="d-flex flex-column gap-3">
+          <h6 class="fw-bold mb-0 fs-6">رقم الهاتف</h6>
+          <p class="mb-0">01021179969</p>
+        </div>
+      </div>
+
+      <div class="w-100 d-flex align-items-center shadow-sm py-3 px-3 border rounded-2 gap-4">
+        <img src="../assets/mingcute_location-fill.svg" class="me-3">
+        <div class="d-flex flex-column gap-3">
+          <h6 class="fw-bold mb-0 fs-6">العنوان</h6>
+          <p class="mb-0">المعادي – القاهرة – مصر</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="../js/pricing-data.js"></script>
+<script src="../js/price-details.js"></script>
+<script src="../js/scroll-animations.js"></script>
+<script src="../js/active-link.js"></script>
+<script src="../js/include.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+.whatsapp-icon{
+     position: fixed;
+    left: 30px;
+    bottom: 19px;
+    width: 66px;
+}
+
+:root {
+ --bs-primary: #0D3B2D;
+  --bs-primary-rgb: 13, 59, 45;
+
+  --bs-secondary: #709E1B;
+  --bs-secondary-rgb: 112, 158, 27;
+
+  --bs-font-sans-serif: 'Cairo', sans-serif;
+
+ 
+  color-scheme: light;
+
+  line-height: 1.5;
+  font-weight: 400;
+     direction: rtl;
+  color: rgba(255, 255, 255, 0.87);
+}
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #0b2f24;
+  --bs-btn-hover-border-color: #0b2f24;
+  --bs-btn-active-bg: #09251c;
+  --bs-btn-active-border-color: #09251c;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #709E1B;
+  --bs-btn-border-color: #709E1B;
+  --bs-btn-hover-bg: #709E1B;
+  --bs-btn-hover-border-color: #709E1B;
+  --bs-btn-hover-color: #fff;
+}
+
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+     color: #709E1B !important;
+     font-weight: 700 !important;   
+}
+
+
+.w-3{
+     width: 32%;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+     font-size: large;
+     font-weight: 500;
+}
+img.logo {
+    width: 100px;
+}
+
+
+body{
+     background-image: url('/assets/bg_hero.png');
+     background-repeat: repeat-y;
+     background-clip: border-box;
+     background-position: right center;
+     background-size: contain;
+     font-family: var(--bs-font-sans-serif);
+     
+}
+
+
+
+div.box{
+     width:38%;
+}
+div.box-number{
+     width:32%;
+}
+
+
+div.left{
+         width: 45%;
+}
+
+
+header.hero div.left div.d-flex button{
+  padding: 10px 25px;
+
+}
+
+button:hover,
+.btn:hover{
+      transform: scale(1.05) !important;
+      transition: all 0.4s linear !important;
+      background-color: #709E1B !important;
+      color: #fff !important;
+      border: none !important;
+}
+
+
+.accordion-button::after{
+     content: '';
+     display: none;
+}
+
+
+.accordion-header{
+     
+     border: 2px solid #eff0f1;
+     border-radius: 3px !important;
+}
+.accordion-item{
+     border:none !important
+}
+
+.accordion-header button:hover{
+     transform:scale(1); ;
+      box-shadow: 0 0px 10px #365067;
+      transition: all 0.3s linear;
+      background-color: #709E1B !important;
+      border-radius: 4px;
+      border: 3px !important;
+      color: white;
+}
+
+.accordion-item :not(.collapsed){
+     background-color: #0D3B2D !important;
+     color: white !important;
+     border-radius: 4px 4px 0px 0px !important;
+     
+}
+
+.accordion-body{
+     background-image: url('/assets/brand.svg');
+     background-repeat: no-repeat;
+     background-position: center left;
+    
+}
+
+
+.mobile-iamge{
+     display: none;
+}
+ .featrues div.box{
+     width:75%;
+}
+
+.delivery{
+     background-image: url('/assets/bg_delivery.svg');
+     
+
+}
+
+.manger{
+     background-image: url('/assets/bg_manger.svg');
+     
+}
+
+.manger,.delivery{
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 30%;
+}
+
+.hover-apps:hover {
+     transform: scale(1.05);
+     transition: all .3s linear;
+     
+}
+
+.logoClint{
+     width:7%;
+}
+
+
+footer{
+     background-image: url('/assets/brand.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     
+}
+
+
+
+
+
+
+header.hero-price{
+     
+     margin: 120px 0px  30px 0px!important;
+}
+
+
+
+.nav-pills .nav-link.active{
+     border-radius: 55px !important;
+     padding-inline: 30px;
+}
+
+
+
+div.most-saller {
+  position: relative;
+  z-index: 1;
+}
+
+.most-saller::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/brand.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+input::placeholder {
+  text-align: right;
+}
+
+.form-select {
+     direction: rtl !important;
+    background-position: left 0.75rem center !important;
+    padding-left: 1rem !important;
+    padding-right: 0.75rem !important;
+}
+
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.25s ease, transform 0.25s ease;
+  color: var(--bs-navbar-color);
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 60%;
+  height: 2px;
+  background: var(--bs-primary);
+  transition: transform 0.25s ease;
+  border-radius: 2px;
+  opacity: 0.95;
+}
+.navbar .nav-link:hover {
+  color: var(--bs-secondary);
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.navbar .nav-link:hover {
+  transform: translateY(-2px);
+}
+
+
+
+.custom-number-input {
+  position: relative;
+  direction: rtl;
+}
+
+.custom-number-input input {
+  padding-left: 40px; 
+  height: 44px;
+}
+
+.custom-number-input input::-webkit-inner-spin-button,
+.custom-number-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.custom-number-input input {
+  -moz-appearance: textfield;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+.custom-number-input .arrows button {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.custom-number-input .arrows img {
+  width: 14px;
+  height: 14px;
+}
+
+
+
+input.rname {
+         padding-left: 0px;
+}
+
+
+
+.phone-container-ltr {
+  direction: ltr;
+  width: 75%;
+}
+
+.phone-input-rtl {
+  direction: rtl;
+  text-align: right;
+  padding-left: 50px !important; /* مساحة العلم */
+}
+
+.react-tel-input .flag-dropdown {
+  left: 0 !important;
+  right: auto !important;
+}
+
+.react-tel-input .form-control {
+  height: 48px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+     div.box{
+          width:80%;
+     }
+     div.box-number{
+          width:80%;
+     }
+     div.left{
+          width: 100%;
+          text-align: center;
+     }
+
+     .mobile-iamge{
+          display: block;
+          width: 60% !important;
+     }
+     div.numbers div.box{
+     width: 80%;
+     }
+
+     div.content div.box{
+          display: none;
+     }
+
+
+
+     div.most-saller{
+          width: 80%;
+     }
+
+     div.most-saller{
+          width: 80%;
+          margin-top: 30px;
+     }
+     div.pri{
+          width: 80% !important;
+     }
+    
+}
+
+
+@media screen and (max-width: 992px){
+         .w-3{
+     width: 100%;
+}
+ .delivery,.manger{
+          width: 90% !important;
+     }
+}
+/* ------------------------------ */
+/* Scroll-on-view animations ⚡️ */
+/* Lightweight, uses IntersectionObserver and transforms only for best performance */
+
+.animate-on-scroll{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+
+/* direction / type modifiers */
+.animate-on-scroll[data-animate="fade-left"]{ transform: translateX(-20px); }
+.animate-on-scroll[data-animate="fade-right"]{ transform: translateX(20px); }
+.animate-on-scroll[data-animate="zoom-in"]{ transform: scale(0.95); }
+
+/* visible state */
+.animate-on-scroll.in-view{
+  opacity: 1;
+  transform: none;
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .animate-on-scroll, .animate-on-scroll.in-view{
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* small helper for stagger via data-delay, e.g. data-delay="100ms" */
+.animate-on-scroll[data-delay]{
+  transition-delay: var(--scroll-delay, 0ms);
+}
