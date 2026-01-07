@@ -78,7 +78,7 @@ img.logo {
 
 
 body{
-     background-image: url('/assets/bg_hero.png');
+     background-image: url('../assets/bg_hero.png');
      background-repeat: repeat-y;
      background-clip: border-box;
      background-position: right center;
@@ -150,7 +150,7 @@ button:hover,
 }
 
 .accordion-body{
-     background-image: url('/assets/brand.svg');
+     background-image: url('../assets/brand.svg');
      background-repeat: no-repeat;
      background-position: center left;
     
@@ -165,13 +165,13 @@ button:hover,
 }
 
 .delivery{
-     background-image: url('/assets/bg_delivery.svg');
+     background-image: url('../assets/bg_delivery.svg');
      
 
 }
 
 .manger{
-     background-image: url('/assets/bg_manger.svg');
+     background-image: url('../assets/bg_manger.svg');
      
 }
 
@@ -193,7 +193,7 @@ button:hover,
 
 
 footer{
-     background-image: url('/assets/brand.svg');
+     background-image: url('../assets/brand.svg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
@@ -228,7 +228,7 @@ div.most-saller {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/assets/brand.svg');
+  background-image: url('../assets/brand.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
