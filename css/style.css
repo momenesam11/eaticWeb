@@ -58,20 +58,14 @@
 }
 
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-     color: #709E1B !important;
-     font-weight: 700 !important;   
-}
+
 
 
 .w-3{
      width: 32%;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-     font-size: large;
-     font-weight: 500;
-}
+
 img.logo {
     width: 100px;
 }
@@ -268,16 +262,14 @@ input::placeholder {
   border-radius: 2px;
   opacity: 0.95;
 }
-.navbar .nav-link:hover {
-  color: var(--bs-secondary);
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--bs-secondary) !important;
+  transform: translateY(-2px);
 }
 .navbar .nav-link:hover::after,
 .navbar .nav-link.active::after {
   transform: translateX(-50%) scaleX(1);
-}
-
-.navbar .nav-link:hover {
-  transform: translateY(-2px);
 }
 
 

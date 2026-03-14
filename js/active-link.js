@@ -1,7 +1,14 @@
 window.setActiveNav = function() {
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  let currentPage = window.location.pathname.split("/").pop();
+  if (!currentPage || currentPage === "eaticWeb" || currentPage === "") {
+    currentPage = "index.html";
+  }
   document.querySelectorAll(".navbar .nav-link").forEach(link => {
-    link.classList.toggle('active', link.dataset.page === currentPage);
+    const href = link.getAttribute("href") || "";
+    if (href) {
+      const linkPage = href.split("/").pop();
+      link.classList.toggle('active', linkPage === currentPage);
+    }
   });
 };
 
